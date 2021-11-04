@@ -24,6 +24,13 @@ function make_col(num_col){
 }
 
 
+function size(num){
+    while (container.firstChild){
+        container.removeChild(container.lastChild);
+    }
+    make_rows(num);
+    make_col(num);
+}
 
-make_rows(20);
-make_col(20);
+
+size(1000);

@@ -1,22 +1,24 @@
 .container{
-    display: flex;
-    width: 960px;
+    display: table;
+    height: 500px;
+    width: 500px;
+    
+    
 }
 .col_grid{
-    flex: 1;
-    height: 50px;
-    width: 50px;
+    
     border: 1px solid red;
     background: black;
     opacity: 0;
     transition: opacity 2s ease 0.4s, transform 1s ease;
+    display: table-cell;
+    
 
 }
 
 .row_grid{
-
     background: white;
-    
+    display: table-row
 }
 
 .col_grid:hover{
