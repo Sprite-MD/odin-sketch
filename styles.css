@@ -1,13 +1,27 @@
 .container{
     display: flex;
+    width: 960px;
 }
 .col_grid{
     flex: 1;
     height: 50px;
     width: 50px;
     border: 1px solid red;
+    background: black;
+    opacity: 0;
+    transition: opacity 2s ease 0.4s, transform 1s ease;
+
 }
 
 .row_grid{
+
+    background: white;
+    
+}
+
+.col_grid:hover{
     background: red;
+    opacity: 1;
+    transition: opacity .2s ease;
+    transform: scale(1);
 }

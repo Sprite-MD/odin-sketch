@@ -25,5 +25,5 @@ function make_col(num_col){
 
 
 
-make_rows(16);
-make_col(16);
+make_rows(20);
+make_col(20);
