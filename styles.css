@@ -1,13 +1,13 @@
+.container{
+    display: flex;
+}
 .col_grid{
-    height: 100px;
-    width: 100px;
-    border: 10px red;
-    background-color: blue;
     flex: 1;
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
 }
 
 .row_grid{
-    border: 10px red;
-    height: 100px;
-    width: 100px;
+    background: red;
 }
