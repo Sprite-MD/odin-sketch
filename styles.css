@@ -1,0 +1,13 @@
+.col_grid{
+    height: 100px;
+    width: 100px;
+    border: 10px red;
+    background-color: blue;
+    flex: 1;
+}
+
+.row_grid{
+    border: 10px red;
+    height: 100px;
+    width: 100px;
+}
