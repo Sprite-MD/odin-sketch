@@ -1,6 +1,6 @@
 let container = document.querySelector('.container');
-let cell = document.querySelectorAll('.col_grid');
 
+// Creating rows and columns to form grid
 function make_rows(num_rows){
     for(i = 0; i < num_rows; i ++){
         let row_div = document.createElement('div');
@@ -21,7 +21,9 @@ function make_col(num_col){
     })
 }
 
-function size(num){
+
+function change_size(num){
+    // Clears any existing grid first
     while (container.firstChild){
         container.removeChild(container.lastChild);
     }
@@ -29,6 +31,12 @@ function size(num){
     make_col(num);
 }
 
+change_size(25);
+
+let cell = document.querySelector('.col_grid');
+
+cell.addEventListener('mouseenter', e =>{
+    e.style.backgroundColor = 'orange';
+});
 
 
-size(25);
