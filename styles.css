@@ -1,5 +1,5 @@
 .container{
-    display: table;
+
     height: 500px;
     width: 500px;
     
@@ -8,14 +8,14 @@
 .col_grid{
     border: 1px solid red;
     background: black;
+    display: grid;
     /* opacity: 0;
     transition: opacity 2s ease 0.4s, transform 1s ease; */
-    display: table-cell;
 }
 
 .row_grid{
     background: white;
-    display: table-row;
+    display: grid;
 }
 
 /* .col_grid:hover{

@@ -37,6 +37,7 @@ let cell = document.querySelector('.col_grid');
 
 cell.addEventListener('mouseenter', e =>{
     e.style.backgroundColor = 'orange';
+    container.append(cell);
 });
 
 
