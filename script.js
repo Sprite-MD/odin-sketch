@@ -33,10 +33,3 @@ function change_size(num){
 
 change_size(25);
 
-let cell = document.querySelector('.col_grid');
-
-cell.addEventListener('mouseenter', e =>{
-    e.style.backgroundColor = 'orange';
-});
-
-
