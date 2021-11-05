@@ -1,4 +1,5 @@
 let container = document.querySelector('.container');
+let cell = document.querySelectorAll('.col_grid');
 
 function make_rows(num_rows){
     for(i = 0; i < num_rows; i ++){
@@ -20,7 +21,6 @@ function make_col(num_col){
     })
 }
 
-
 function size(num){
     while (container.firstChild){
         container.removeChild(container.lastChild);
@@ -28,6 +28,7 @@ function size(num){
     make_rows(num);
     make_col(num);
 }
+
 
 
 size(25);
