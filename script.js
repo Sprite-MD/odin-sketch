@@ -25,8 +25,15 @@ function change_size(size){
     make_grid(size);
 }
 
-change_size(100);
+change_size(20);
 
+const clear_btn = docunment.querySelector('#clear');
 
+function clear(){
+    const cells = document.querySelectorAll('.cells');
+    cells.forEach(() => {
+        cells.style.backgroundColor = 'black';
+    });
+}
 
-
+clear_btn.addEventListener('click', clear);
