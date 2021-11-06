@@ -1,20 +1,12 @@
 .container{
-    display: table;
+    display: grid;
     height: 500px;
     width: 500px;
     
     
 }
-.col_grid{
-    /* border: 1px solid red; */
-    background: black;
-
-    display: table-cell;
-}
-
-.row_grid{
-    background: white;
-    display: table-row;
+.cells{
+    border: 1px solid blue;
 }
 
 

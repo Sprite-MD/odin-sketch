@@ -11,7 +11,7 @@ function make_grid(size){
 
     for(i=0;i<= size*size;i++){
         const grid = document.createElement('div');
-        grid.className
+        grid.classList.add('cells')
         grid.addEventListener('mouseover', change);
         container.append(grid);
     }
