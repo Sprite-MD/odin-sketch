@@ -34,7 +34,7 @@ function change_size(num){
     make_rows(num);
     make_col(num);
     current = num;
-}
+} 
 
 const cells = document.querySelectorAll('col_grid');
 const clear_btn = document.querySelector('#clear');
