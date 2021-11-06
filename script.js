@@ -42,6 +42,8 @@ clear_btn.addEventListener('click', clear);
 change_size(50);
 
 
-
-
-
+function clear(){
+    cells.forEach((cell) => {
+        cell.style.backgroundColor = 'black';
+    });
+}
