@@ -1,9 +1,12 @@
+h1{
+    align-items: center;
+
+}
+
 .container{
     display: grid;
     height: 500px;
     width: 500px;
-    
-    
 }
 .cells{
     border: 1px solid blue;

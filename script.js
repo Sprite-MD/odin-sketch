@@ -27,12 +27,12 @@ function change_size(size){
 
 change_size(20);
 
-const clear_btn = docunment.querySelector('#clear');
+const clear_btn = document.querySelector('#clear');
 
 function clear(){
     const cells = document.querySelectorAll('.cells');
-    cells.forEach(() => {
-        cells.style.backgroundColor = 'black';
+    cells.forEach((cell) => {
+        cell.style.backgroundColor = 'black';
     });
 }
 
