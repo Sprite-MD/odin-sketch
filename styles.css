@@ -1,28 +1,20 @@
 .container{
-
+    display: table;
     height: 500px;
     width: 500px;
     
     
 }
 .col_grid{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background: black;
-    display: grid;
-    /* opacity: 0;
-    transition: opacity 2s ease 0.4s, transform 1s ease; */
+
+    display: table-cell;
 }
 
 .row_grid{
     background: white;
-    display: grid;
+    display: table-row;
 }
 
-/* .col_grid:hover{
-    background: red;
-    opacity: 1;
-    transition: opacity .2s ease;
-    transform: scale(1);
-    
-} */
 
