@@ -43,10 +43,5 @@ change_size(25);
 
 
 
-function clear(){
-    cells.forEach((cell) => {
-        cell.style.backgroundColor = 'black';
-    });
-}
 
 
