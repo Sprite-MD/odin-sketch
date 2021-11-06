@@ -20,12 +20,12 @@ make_grid(16);
 
 function change_size(size){
     while(container.firstChild){
-        container.remove(container.lastChild);
+        container.removeChild(container.lastChild);
     }
     make_grid(size);
 }
 
-change_size(50);
+change_size(100);
 
 
 
