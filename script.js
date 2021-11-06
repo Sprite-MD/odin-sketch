@@ -39,7 +39,7 @@ function change_size(num){
 const cells = document.querySelectorAll('col_grid');
 const clear_btn = document.querySelector('#clear');
 clear_btn.addEventListener('click', clear);
-change_size(25);
+change_size(50);
 
 
 

@@ -7,6 +7,7 @@
 }
 .col_grid{
     /* border: 1px solid red; */
+    border:1px solid blue;
     background: black;
     display: table-cell;
 }
