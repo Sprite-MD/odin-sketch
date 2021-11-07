@@ -8,7 +8,11 @@ The clear button will wipe the board of all trails and revert it back to it's or
 The reset button will clear the board while prompting the user to specify the number of cells they want in the grid.  
 
 What I learned:  
-Using DOM manipulation to create a grid system through loops and functions  
-Applied CSS to create a fixed grid  
-Implemented JavaScript events that will interact with the grid through buttons and cursor  
+Used DOM manipulation to create a grid system 
+Applied CSS grid and flex to organize and format the web page
+Implemented JavaScript events, allowing user to interact with the canvas through the cursor and buttons
 
+To Dos:  
+Size slider/prompter  
+Different color options  
+Formatting  
