@@ -1,49 +1,39 @@
-const container = document.querySelector('.container');
+const container = document.querySelector('.grid_container');
 
 function change(e){
     e.target.style.backgroundColor = 'red';
 }
 
 // Creating rows and columns to form grid
-function make_rows(num_rows){
-    for(i = 0; i < num_rows; i ++){
-        let row_div = document.createElement('div');
-        row_div.classList.add('row_grid');
-        container.append(row_div);
+function make_grid(size){
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`
+    container.style.gridTemplateRows = `repeat(${size}, 1fr)`
+
+    for(i=0;i<= size*size;i++){
+        const grid = document.createElement('div');
+        grid.classList.add('cells')
+        grid.addEventListener('mouseover', change);
+        container.append(grid);
     }
 }
+make_grid(16);
 
-function make_col(num_col){
-    const rows = container.querySelectorAll('.row_grid');
-    rows.forEach((row) => {
-        for(j=0;j<num_col; j++){
-            let col_div = document.createElement('div');
-            col_div.classList.add('col_grid');
-            col_div.addEventListener('mouseover', change); 
-            row.append(col_div);
-        }
-    })
-}
-
-let current = 0;
-function change_size(num){
-    // Clears any existing grid first
-    while (container.firstChild){
+function change_size(size){
+    while(container.firstChild){
         container.removeChild(container.lastChild);
     }
-    make_rows(num);
-    make_col(num);
-    current = num;
-} 
+    make_grid(size);
+}
 
-const cells = document.querySelectorAll('col_grid');
+change_size(20);
+
 const clear_btn = document.querySelector('#clear');
-clear_btn.addEventListener('click', clear);
-change_size(50);
-
 
 function clear(){
+    const cells = document.querySelectorAll('.cells');
     cells.forEach((cell) => {
         cell.style.backgroundColor = 'black';
     });
 }
+
+clear_btn.addEventListener('click', clear);
