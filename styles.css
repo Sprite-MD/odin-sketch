@@ -12,9 +12,7 @@ h1{
 .grid_container{
     display: grid;
     height: 500px;
-    width: 500px;
-    
-   
+    width: 500px;  
 }
 .cells{
     border: 1px solid blue;

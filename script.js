@@ -28,7 +28,6 @@ function change_size(size){
 change_size(20);
 
 const clear_btn = document.querySelector('#clear');
-
 function clear(){
     const cells = document.querySelectorAll('.cells');
     cells.forEach((cell) => {
