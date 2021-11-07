@@ -1,4 +1,4 @@
-const container = document.querySelector('.container');
+const container = document.querySelector('.grid_container');
 
 function change(e){
     e.target.style.backgroundColor = 'red';
