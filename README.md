@@ -1,4 +1,4 @@
-# sketch
+# odin-sketch
 
 Created a drawing canvas based on https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project.
 
